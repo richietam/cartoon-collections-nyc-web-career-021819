@@ -20,7 +20,9 @@ end
 
 def find_the_cheese(contains_cheddar)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  newArr = []
   if contains_cheddar.any?{|x| cheese_types.include?(x)}
-    contains_cheddar & cheese_types
+    newArr = contains_cheddar & cheese_types
+    newArr[0]
   end
 end
